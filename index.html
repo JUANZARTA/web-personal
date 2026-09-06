@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juan Zarta — Full Stack Developer</title>
+  <meta name="description" content="Portfolio de Juan Camilo Zarta Campo, Full Stack Developer especializado en Angular, Spring Boot, React y arquitectura limpia.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- SCROLL PROGRESS -->
+  <div id="scroll-progress" aria-hidden="true"></div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <a href="#inicio" class="navbar-brand">
+      <span class="navbar-badge">JZ</span>
+      <span class="navbar-name">Juan Zarta</span>
+    </a>
+    <ul class="navbar-links">
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#sobre-mi">Sobre mí</a></li>
+      <li><a href="#habilidades">Habilidades</a></li>
+      <li><a href="#experiencia">Experiencia</a></li>
+      <li><a href="#portafolio">Portafolio</a></li>
+      <li><a href="#contacto" class="nav-cta">Contacto</a></li>
+    </ul>
+    <div class="navbar-controls">
+      <button class="hamburger" id="hamburger" aria-label="Menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobile-menu">
+    <ul>
+      <li><a href="#inicio"><i class="fas fa-home"></i> Inicio</a></li>
+      <li><a href="#sobre-mi"><i class="fas fa-user"></i> Sobre mí</a></li>
+      <li><a href="#habilidades"><i class="fas fa-star"></i> Habilidades</a></li>
+      <li><a href="#experiencia"><i class="fas fa-briefcase"></i> Experiencia</a></li>
+      <li><a href="#portafolio"><i class="fas fa-folder-open"></i> Portafolio</a></li>
+      <li><a href="#stack"><i class="fas fa-code"></i> Stack</a></li>
+      <li><a href="#educacion"><i class="fas fa-graduation-cap"></i> Educación</a></li>
+      <li><a href="#contacto"><i class="fas fa-envelope"></i> Contacto</a></li>
+    </ul>
+  </div>
+  <div class="mobile-overlay" id="mobile-overlay"></div>
+
+  <!-- HERO -->
+  <section id="inicio" class="section hero-section">
+    <div class="deco-particles" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+    <div class="hero-grid">
+      <div class="hero-text reveal">
+        <p class="hero-eyebrow"><i class="fas fa-code"></i> Full Stack Developer</p>
+        <h1 class="hero-title">Juan Camilo<br><span class="accent">Zarta Campo</span></h1>
+        <p class="hero-sub">Angular · Spring Boot · React · Java · MySQL</p>
+        <p class="hero-desc">Construyo soluciones web con enfoque en arquitectura limpia, calidad y experiencia de usuario. Transformo requerimientos en productos escalables y listos para crecer.</p>
+        <div class="hero-ctas">
+          <a href="#portafolio" class="btn-primary">Ver portafolio <i class="fas fa-arrow-right"></i></a>
+          <a href="#contacto" class="btn-ghost">Contactarme</a>
+        </div>
+      </div>
+      <div class="hero-photo-wrap reveal">
+        <div class="photo-frame">
+          <img src="Foto/foto.png" alt="Juan Camilo Zarta Campo" class="hero-photo">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE MÍ -->
+  <section id="sobre-mi" class="section section-alt">
+    <div class="deco-particles" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+    <div class="section-inner">
+      <div class="section-header">
+        <h2 class="section-title">Sobre mí</h2>
+        <p class="section-sub">Desarrollador con enfoque en arquitectura, calidad y soluciones reales</p>
+      </div>
+      <div class="about-grid">
+        <div class="about-card reveal">
+          <div class="about-icon"><i class="fas fa-laptop-code"></i></div>
+          <h3>Full Stack</h3>
+          <p>Experiencia en frontend y backend, integración de APIs REST, modelado de bases de datos y diseño de módulos empresariales con Angular, React, Spring Boot y Java.</p>
+        </div>
+        <div class="about-card reveal">
+          <div class="about-icon"><i class="fas fa-sitemap"></i></div>
+          <h3>Arquitectura Limpia</h3>
+          <p>Especializado en Arquitectura Hexagonal y Microservicios. Diseño sistemas escalables y mantenibles que crecen con el negocio sin acumular deuda técnica.</p>
+        </div>
+        <div class="about-card reveal">
+          <div class="about-icon"><i class="fas fa-brain"></i></div>
+          <h3>IA Aplicada</h3>
+          <p>Experiencia con CNN, YOLO, TensorFlow, Keras y OpenCV. Implementé sistemas de detección de vehículos en tiempo real con redes neuronales convolucionales.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HABILIDADES -->
+  <section id="habilidades" class="section">
+    <div class="deco-particles" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+    <div class="section-inner">
+      <div class="section-header">
+        <h2 class="section-title">Habilidades</h2>
+        <p class="section-sub">Stack y competencias técnicas consolidadas</p>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card reveal">
+          <h4><i class="fas fa-code"></i> Lenguajes y Tecnologías Web</h4>
+          <p>C#, Java, Python, TypeScript, PHP, Kotlin, C/C++, Ruby, SQL/PLSQL, HTML, CSS, JavaScript, XML.</p>
+        </div>
+        <div class="skill-card reveal">
+          <h4><i class="fas fa-layer-group"></i> Frameworks y Arquitecturas</h4>
+          <p>.NET Core, ASP.NET, Spring Boot, Ruby on Rails, MVC, Microservicios, Arquitectura Hexagonal, REST APIs.</p>
+        </div>
+        <div class="skill-card reveal">
+          <h4><i class="fas fa-database"></i> Bases de Datos & ORMs</h4>
+          <p>SQL Server, MySQL, Oracle, SQLite, Firebase, Entity Framework.</p>
+        </div>
+        <div class="skill-card reveal">
+          <h4><i class="fas fa-desktop"></i> Front-End y UI</h4>
+          <p>Angular, React, Bootstrap, Tailwind, HTML, CSS, JavaScript, XML.</p>
+        </div>
+        <div class="skill-card reveal">
+          <h4><i class="fas fa-tools"></i> DevOps & Herramientas</h4>
+          <p>Git, Visual Studio, Android Studio.</p>
+        </div>
+        <div class="skill-card reveal">
+          <h4><i class="fas fa-brain"></i> Inteligencia Artificial</h4>
+          <p>Redes neuronales (CNN, Transformers), Deep Learning, NLP, visión por computador (OpenCV), YOLO, Keras y TensorFlow.</p>
+        </div>
+        <div class="skill-card reveal">
+          <h4><i class="fas fa-users"></i> Metodologías Ágiles</h4>
+          <p>Scrum, Kanban y trabajo colaborativo en células de desarrollo.</p>
+        </div>
+        <div class="skill-card reveal">
+          <h4><i class="fas fa-project-diagram"></i> Gestión y Arquitectura de Software</h4>
+          <p>Levantamiento de requerimientos, análisis funcional, planeación de proyectos y diseño de arquitecturas escalables.</p>
+        </div>
+        <div class="skill-card reveal">
+          <h4><i class="fas fa-mobile-alt"></i> Desarrollo Adicional</h4>
+          <p>Aplicaciones de escritorio (Java y C#), apps móviles nativas con Kotlin, sitios estáticos y dinámicos con enfoque en accesibilidad.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCIA -->
+  <section id="experiencia" class="section section-alt">
+    <div class="deco-particles" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+    <div class="section-inner">
+      <div class="section-header">
+        <h2 class="section-title">Experiencia Destacada</h2>
+        <p class="section-sub">Proyectos reales con impacto medible</p>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <p class="timeline-meta">Full Stack Developer / IA Engineer · 2023</p>
+            <h4>Detección de vehículos con redes neuronales</h4>
+            <p>Implementé una solución de visión por computador para detección e identificación de vehículos empleando CNN y técnicas de deep learning. Desarrollé funciones de procesamiento en tiempo real y colaboré con el equipo de seguridad en la definición de criterios de riesgo.</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <p class="timeline-meta">Full Stack Developer · 2024–2025</p>
+            <h4>Software contable — Facultad de Ciencias Contables (Unicauca)</h4>
+            <p>Participé en el desarrollo de un sistema de gestión contable modular. Fui responsable del módulo de gestión de empresas con Angular, Spring Boot y MySQL, incluyendo creación de empresas, gestión de copias de seguridad y organización operativa.</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <p class="timeline-meta">Full Stack Developer · 2024</p>
+            <h4>Software de intercambio estudiantil — Universidad del Cauca</h4>
+            <p>Lideré el desarrollo frontend y backend del módulo de intercambio de estudiantes. Implementé la interfaz en React y en backend desarrollé la lógica de negocio e integración de datos académicos con el sistema principal.</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <p class="timeline-meta">Video & Motion Graphics Specialist / Developer · 2022–2025</p>
+            <h4>Empresa de publicidad en EE.UU.</h4>
+            <p>Implementé estrategias digitales para campañas, produje piezas audiovisuales para múltiples plataformas y desarrollé sitios web articulando contenido, narrativa visual y objetivos de conversión.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTAFOLIO -->
+  <section id="portafolio" class="section">
+    <div class="deco-particles" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+    <div class="section-inner">
+      <div class="section-header">
+        <h2 class="section-title">Portafolio</h2>
+        <p class="section-sub">Proyectos que hablan por sí solos</p>
+      </div>
+      <div class="carousel-container">
+        <div class="carousel-track" id="portfolio-carousel"></div>
+        <button class="carousel-arrow carousel-prev" id="carousel-prev" aria-label="Anterior"><i class="fas fa-chevron-left"></i></button>
+        <button class="carousel-arrow carousel-next" id="carousel-next" aria-label="Siguiente"><i class="fas fa-chevron-right"></i></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- STACK -->
+  <section id="stack" class="section section-alt">
+    <div class="deco-particles" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+    <div class="section-inner">
+      <div class="section-header">
+        <h2 class="section-title">Stack Tecnológico</h2>
+        <p class="section-sub">Herramientas con las que construyo soluciones</p>
+      </div>
+      <div class="stack-grid">
+        <div class="stack-item reveal"><i class="fab fa-angular"></i><span>Angular</span></div>
+        <div class="stack-item reveal"><i class="fab fa-react"></i><span>React</span></div>
+        <div class="stack-item reveal"><i class="fab fa-java"></i><span>Java</span></div>
+        <div class="stack-item reveal"><i class="fas fa-leaf"></i><span>Spring Boot</span></div>
+        <div class="stack-item reveal"><i class="fab fa-js"></i><span>TypeScript</span></div>
+        <div class="stack-item reveal"><i class="fas fa-database"></i><span>MySQL</span></div>
+        <div class="stack-item reveal"><i class="fas fa-fire"></i><span>Firebase</span></div>
+        <div class="stack-item reveal"><i class="fab fa-git-alt"></i><span>Git</span></div>
+        <div class="stack-item reveal"><i class="fab fa-python"></i><span>Python</span></div>
+        <div class="stack-item reveal"><i class="fab fa-html5"></i><span>HTML</span></div>
+        <div class="stack-item reveal"><i class="fab fa-css3-alt"></i><span>CSS</span></div>
+        <div class="stack-item reveal"><i class="fas fa-server"></i><span>REST APIs</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCACIÓN -->
+  <section id="educacion" class="section">
+    <div class="deco-particles" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+    <div class="section-inner">
+      <div class="section-header">
+        <h2 class="section-title">Educación e Idiomas</h2>
+        <p class="section-sub">Formación académica y competencias lingüísticas</p>
+      </div>
+      <div class="edu-grid">
+        <div class="edu-card reveal">
+          <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
+          <h4>Ingeniería de Sistemas</h4>
+          <p class="edu-place">Universidad del Cauca</p>
+          <p class="edu-period">2019 – actualidad</p>
+        </div>
+        <div class="edu-card reveal">
+          <div class="edu-icon"><i class="fas fa-school"></i></div>
+          <h4>Bachiller Técnico</h4>
+          <p class="edu-place">Institución Técnico Industrial</p>
+          <p class="edu-period">2018</p>
+        </div>
+        <div class="edu-card reveal">
+          <div class="edu-icon"><i class="fas fa-language"></i></div>
+          <h4>Idiomas</h4>
+          <p class="edu-place">Español nativo</p>
+          <p class="edu-period">Inglés — nivel intermedio básico</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contacto" class="section section-alt">
+    <div class="deco-particles" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+    <div class="section-inner">
+      <div class="section-header">
+        <h2 class="section-title">Contacto</h2>
+        <p class="section-sub">¿Tenés un proyecto en mente? Hablemos.</p>
+      </div>
+      <div class="contact-grid">
+        <a class="contact-card reveal" href="https://wa.me/573128622945?text=Hola%20Juan%2C%20vi%20tu%20portafolio%20y%20me%20gustar%C3%ADa%20contactarme" target="_blank" rel="noopener">
+          <div class="contact-icon wa-icon"><i class="fab fa-whatsapp"></i></div>
+          <div class="contact-info">
+            <strong>WhatsApp</strong>
+            <p>+57 312 862 2945</p>
+          </div>
+        </a>
+        <a class="contact-card reveal" href="mailto:lordimpi26@gmail.com">
+          <div class="contact-icon mail-icon"><i class="fas fa-envelope"></i></div>
+          <div class="contact-info">
+            <strong>Email</strong>
+            <p>lordimpi26@gmail.com</p>
+          </div>
+        </a>
+        <a class="contact-card reveal" href="https://github.com/JUANZARTA" target="_blank" rel="noopener">
+          <div class="contact-icon gh-icon"><i class="fab fa-github"></i></div>
+          <div class="contact-info">
+            <strong>GitHub</strong>
+            <p>JUANZARTA</p>
+          </div>
+        </a>
+        <a class="contact-card reveal" href="#" target="_blank" rel="noopener">
+          <div class="contact-icon li-icon"><i class="fab fa-linkedin-in"></i></div>
+          <div class="contact-info">
+            <strong>LinkedIn</strong>
+            <p>Juan Zarta</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p class="footer-credits">© <span id="year"></span> <span class="accent">Juan Camilo Zarta Campo</span> — Full Stack Developer</p>
+  </footer>
+
+  <!-- BACK TO TOP -->
+  <button class="back-top" id="back-top" aria-label="Volver arriba">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <script src="app.js"></script>
+</body>
+</html>
