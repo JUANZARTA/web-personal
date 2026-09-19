@@ -712,6 +712,7 @@ button { cursor: pointer; }
 
 .carousel-track {
   display: flex;
+  align-items: flex-start;
   gap: 24px;
   overflow-x: auto;
   scroll-behavior: smooth;
@@ -727,7 +728,7 @@ button { cursor: pointer; }
 .carousel-track > div {
   flex: 0 0 calc(33.333% - 16px);
   min-width: 320px;
-  min-height: 600px;
+  min-height: auto;
 }
 
 @keyframes carousel-arrow-shimmer {
