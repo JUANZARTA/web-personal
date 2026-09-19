@@ -449,6 +449,7 @@ button { cursor: pointer; }
 
 .photo-frame {
   position: relative;
+  width: min(300px, 100%);
   border-radius: 24px;
   padding: 3px;
   background: linear-gradient(135deg, var(--blue-dark), var(--blue), rgba(var(--blue-rgb), 0.1) 80%);
@@ -464,10 +465,8 @@ button { cursor: pointer; }
 }
 
 .hero-photo {
-  width: min(300px, 100%);
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
-  object-position: top center;
+  width: 100%;
+  height: auto;
   border-radius: 22px;
   display: block;
   background: var(--surface);
@@ -1332,7 +1331,7 @@ button { cursor: pointer; }
 
   .hero-photo-wrap { order: -1; }
 
-  .hero-photo {
+  .photo-frame {
     width: min(200px, 60vw);
   }
 
